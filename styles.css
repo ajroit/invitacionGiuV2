@@ -551,6 +551,13 @@ h6 {
     margin-bottom: 1rem;
 }
 
+.custom-dress-icon {
+    width: 60px;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
 .no-green-warning {
     margin-top: 2rem;
     background-color: var(--white);
@@ -587,6 +594,9 @@ h6 {
     color: var(--mint-600);
     flex-shrink: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay-icon {
@@ -1207,5 +1217,13 @@ select:focus {
 
     .gift-card p {
         text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        background-attachment: scroll;
+        background-position: center center;
+        padding-top: 100px;
     }
 }
